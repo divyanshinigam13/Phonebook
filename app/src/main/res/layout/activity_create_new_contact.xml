@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateNewContact">
+<soup.neumorphism.NeumorphCardView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center_horizontal"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+
+    android:drawableLeft="@drawable/ic_baseline_person_24"
+    />
+</soup.neumorphism.NeumorphCardView>
+    <EditText
+        android:layout_width="350dp"
+        android:id="@+id/etName"
+        android:hint=" First Name"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FF1334E3"
+        android:textColorHint="#CD1838E4"
+        android:padding="20dp"
+        android:background="@drawable/backdetails"
+        android:inputType="textPersonName"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="350dp"
+        android:id="@+id/etlastName"
+        android:hint=" Last Name"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FF1334E3"
+        android:textSize="20sp"
+        android:textColorHint="#CD1838E4"
+
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+       android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="@drawable/backdetails"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="350dp"
+        android:id="@+id/etphone"
+        android:textColor="#FF1334E3"
+        android:textColorHint="#CD1838E4"
+        android:hint="Phone Number"
+        android:textSize="20sp"
+
+        android:padding="20dp"
+        android:background="@drawable/backdetails"
+        android:inputType="phone"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/idBtnAddContact"
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:elevation="20dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Save Contact"
+        android:textAllCaps="false" />
+</LinearLayout>

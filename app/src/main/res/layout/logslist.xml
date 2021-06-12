@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    app:cardCornerRadius="15dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divyanshi Nigam"
+        android:textColor="#FF1334E3"
+
+       android:fontFamily="sans-serif-condensed-medium"
+       android:layout_toRightOf="@id/logperson"
+
+        android:textSize="23sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/div"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8931054544"
+        android:textColor="#FF1334E3"
+       android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/logperson"
+        android:layout_below="@id/div"
+        android:textSize="13sp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/no"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25min 2 sec"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FF1334E3"
+        android:layout_below="@id/date"
+       android:layout_alignParentRight="true"
+        android:textSize="13sp"
+        android:id="@+id/dura"
+        />
+
+    <TextView
+        android:id="@+id/logperson"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:drawableLeft="@drawable/ic_baseline_person" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:textColor="#FF1334E3"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentRight="true"
+        android:text="Saturday 4 June"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1334E3"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="6:55"
+
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Outgoing: "
+        android:textColor="#FF1334E3"
+        android:layout_toLeftOf="@id/dura"
+        android:id="@+id/type"
+        android:textSize="13dp"
+        android:layout_below="@id/date"
+
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

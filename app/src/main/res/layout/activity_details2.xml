@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".details2">
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cardperson"
+        app:neumorph_shapeType="flat"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            />
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/cardperson"
+        android:layout_marginTop="90dp"
+        app:neumorph_shapeType="flat"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/backname"
+
+            >
+
+            <TextView
+                android:id="@+id/dname"
+                android:layout_width="330dp"
+                android:layout_height="64dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Divyanshi Nigam"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8931054544"
+                android:id="@+id/dno"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+
+                />
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:background="@drawable/backdetails"
+                android:layout_marginTop="100dp"
+                >
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/dcall"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:drawableLeft="@drawable/ic_baseline_call_24" />
+                </soup.neumorphism.NeumorphCardView>
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:drawableLeft="@drawable/ic_baseline_sms_24"
+                        android:layout_alignParentEnd="true"
+
+                        android:id="@+id/dsms"
+
+                        />
+                </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+</RelativeLayout>
